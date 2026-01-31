@@ -1,5 +1,8 @@
 🔐 Phishing URL Blocker
 
+[![Python](https://img.shields.io/badge/python-v3.11-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 Rule-Based + Backend-Supported Browser Extension
 
 📌 Project Overview
@@ -166,3 +169,4 @@ B.E Computer Science and Design (CSD)
 🔗 GitHub: https://github.com/Nikesh-dev-06
 
 📧 Email: nikes.dev.06gmail@gmail.com
+
