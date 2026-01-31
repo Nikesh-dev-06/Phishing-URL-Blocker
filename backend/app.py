@@ -27,7 +27,6 @@ def normalize_url(url: str) -> str:
 
     return url
 
-
 # ---------- LOAD CSV SAFELY ----------
 with open("phishing_site_urls.csv", encoding="utf-8", errors="ignore") as f:
     reader = csv.DictReader(f)
@@ -46,7 +45,6 @@ with open("phishing_site_urls.csv", encoding="utf-8", errors="ignore") as f:
 
 print("✅ Phishing URLs loaded:", len(PHISHING_SET))
 print("🔍 Sample:", list(PHISHING_SET)[:5])
-
 
 # ---------- API ----------
 @app.route("/check", methods=["POST"])
@@ -67,7 +65,6 @@ def check_url():
         "status": "allow",
         "reason": "URL is not found in phishing database"
     })
-
 
 if __name__ == "__main__":
     app.run(debug=True)
