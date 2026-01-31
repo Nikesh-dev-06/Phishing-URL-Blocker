@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing URL Blocker",
+  "version": "1.1",
+  "description": "Blocks phishing URLs using rule-based detection before page load",
+
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "declarativeNetRequest"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "phishing_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+
+  "action": {
+    "default_title": "Phishing URL Blocker"
+  }
+}
